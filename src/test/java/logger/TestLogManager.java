@@ -10,20 +10,13 @@ public class TestLogManager {
 
     @Test
     public void testLog4j() throws InterruptedException {
-        while (true) {
-            logger.info("Log4j for Elastic Search");
-            logger.warn("Log4j for Elastic Search");
-            logger.debug("Log4j for Elastic Search");
-            logger.error("Log4j for Elastic Search", new Exception("TEST EXCEPTION"));
-            logger.fatal("Log4j for Elastic Search");
-            Thread.sleep(1000);
 
-            logger3.info("Log4j for Elastic Search");
-            logger3.warn("Log4j for Elastic Search");
-            logger3.debug("Log4j for Elastic Search");
-            logger3.error("Log4j for Elastic Search", new Exception("TEST3 EXCEPTION"));
-            logger3.fatal("Log4j for Elastic Search");
-        }
+        logger.info("INFO for Elastic Search");
+        logger.warn("WARN for Elastic Search");
+        logger.debug("DEBUG for Elastic Search");
+        logger.error("ERROR for Elastic Search", new Exception("TEST EXCEPTION"));
+        logger.fatal("FATAL for Elastic Search");
+
     }
 
 }
